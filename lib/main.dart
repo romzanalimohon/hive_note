@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
+import 'package:hive_tutorial/hive_home.dart';
 import 'package:hive_tutorial/home_screen.dart';
 import 'package:hive_tutorial/models/notes_model.dart';
 import 'package:path_provider/path_provider.dart';
@@ -23,7 +24,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomeScreen(),
+      //home: HomeScreen(),
+      home: HiveHome(),
     );
   }
 }
